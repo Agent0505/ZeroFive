@@ -10,12 +10,17 @@
     font-size: 14px;
     color: #000;
     width: 100%;
+    height: 100%;
+}
+body
+{
+    background: rgb(57, 182, 219);
 }
 header
 {
     display: block;
     height: 7em;
-    background: #AAA;
+    background: rgb(36, 195, 216);
 }
 .head_menu
 {
@@ -54,12 +59,26 @@ header
 content
 {
     display: block;
+    height: 100%;
+}
+content .frame
+{
+    background: rgb(76, 226, 169);
+    width: auto;
+    height: 90%;
+    display: block;
+    margin: 5em 5em 0;
+    padding: 1em;
+    border-radius: 4em;
+    box-shadow: 0 0 50px rgb(76, 226, 169), 5px 0 10px #000;
 }
 footer
 {
+    position: relative;
+    top: 5px;
     height: 50px;
     text-align: right;
-    background: #ADA; 
+    background: rgb(170, 211, 221); 
 }
 footer span
 {
@@ -77,4 +96,12 @@ footer span.foot_text::after
     bottom: 0.3em;
     font-size: 0.7em;
     content: "\2122";
+}
+.hello
+{
+    
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    background: rgba(0,0,0,0.5);
 }
