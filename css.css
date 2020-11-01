@@ -99,7 +99,6 @@ footer span.foot_text::after
 }
 .hello
 {
-    
     overflow: hidden;
     position: absolute;
     display: none;
