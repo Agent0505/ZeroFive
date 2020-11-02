@@ -78,6 +78,7 @@ content
     position: relative;
     display: block;
     height: 1000px;
+    min-width: 1000px;
 }
 content .frame
 {
@@ -92,7 +93,7 @@ content .frame
 }
 content .card
 {
-    margin: 0 50px;
+    margin: 0 10px 30px;
     display: inline-block;
     width: 250px;
     border-radius: 50px;
@@ -146,6 +147,20 @@ footer span.foot_text::after
     bottom: 0.3em;
     font-size: 0.7em;
     content: "\2122";
+}
+.free
+{
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+}
+.free_short
+{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
 }
 .hello
 {
