@@ -7,19 +7,32 @@
     margin: 0;
     font-family: arial,sans-serif;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     color: #000;
-    width: 100%;
-    height: 100%;
+    
+}
+html 
+{
+    overflow-y: auto;
+    background-color: transparent;
 }
 body
 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 10px;
     background: #F8FDFC;
     height: auto;
+    width: 100%;
 }
 header
 {
     display: block;
+    padding: 10px;
     height: 7em;
     background: linear-gradient(#31A4CF,#31A4CF,#F8FDFC);
 }
@@ -36,6 +49,8 @@ header
 }
 .head_menu ul li
 {
+    display: inline;
+    overflow: hidden;
     color: #1A3755; 
     cursor: pointer;
     box-shadow: 5px 5px 5px #333;
@@ -43,7 +58,7 @@ header
     font-size: 2em;
     font-weight: 600;
     display: inline;
-    padding: 0.7%;
+    padding: 0.4em;
     text-align: center;
     margin: 0 calc(1em) 0 0;
     
@@ -60,8 +75,9 @@ header
 }
 content
 {
+    position: relative;
     display: block;
-    height: 100%;
+    height: 1000px;
 }
 content .frame
 {
@@ -74,10 +90,41 @@ content .frame
     border-radius: 4em;
     box-shadow: 0 0 50px rgb(76, 226, 169), 5px 0 10px #000;
 }
+content .card
+{
+    margin: 0 50px;
+    display: inline-block;
+    width: 250px;
+    border-radius: 50px;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px #000;
+    background: radial-gradient(ellipse,#4BC282,#4BC282,#4BC282,#9DE4C4);
+}
+content .card ul
+{
+    text-decoration: none;
+}
+content .card span
+{
+    background: rgba(100,220,150,0.5);
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 20px;
+    padding: 7px;
+    bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
 footer
 {
     position: relative;
     top: 0px;
+    padding: 10px;
     height: 50px;
     text-align: right;
     background: linear-gradient(#F8FDFC,#31A4CF,#1A3755);
