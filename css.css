@@ -5,7 +5,7 @@
     -webkit-user-select: none; 
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: arial,sans-serif;
     text-decoration: none;
     font-size: 14px;
     color: #000;
@@ -14,13 +14,14 @@
 }
 body
 {
-    background: rgb(57, 182, 219);
+    background: #F8FDFC;
+    height: auto;
 }
 header
 {
     display: block;
     height: 7em;
-    background: rgb(36, 195, 216);
+    background: linear-gradient(#31A4CF,#31A4CF,#F8FDFC);
 }
 .head_menu
 {
@@ -35,7 +36,7 @@ header
 }
 .head_menu ul li
 {
-    color: #555; 
+    color: #1A3755; 
     cursor: pointer;
     box-shadow: 5px 5px 5px #333;
     border-radius: 1.1em 0;
@@ -44,13 +45,14 @@ header
     display: inline;
     padding: 0.7%;
     text-align: center;
-    margin: 0 calc(20% - 10em) 0 0;
+    margin: 0 calc(1em) 0 0;
+    
     background: #AEA;
-    transition: all 0.5s;
+    transition: all 0.1s;
 }
 .head_menu ul li:hover
 {
-    color: rgb(48, 46, 190);
+    color: #BA2139;
 }
 .head_menu ul li:active
 {
@@ -63,27 +65,28 @@ content
 }
 content .frame
 {
-    background: rgb(76, 226, 169);
+    background: #7DC2A2;
     width: auto;
     height: 90%;
     display: block;
-    margin: 5em 5em 0;
-    padding: 1em;
+    margin: 5em;
+    padding: 2em;
     border-radius: 4em;
     box-shadow: 0 0 50px rgb(76, 226, 169), 5px 0 10px #000;
 }
 footer
 {
     position: relative;
-    top: 5px;
+    top: 0px;
     height: 50px;
     text-align: right;
-    background: rgb(170, 211, 221); 
+    background: linear-gradient(#F8FDFC,#31A4CF,#1A3755);
 }
 footer span
 {
     font-size: 1.5em;
-    color: #555;
+    color: #BA2139;
+    text-shadow: 0 0 15px #31A4CF, 0 0 5px #F8FDFC, 0 0 20px #31A4CF;
     line-height: 50px;
 }
 footer span.foot_date
