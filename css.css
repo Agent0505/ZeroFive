@@ -8,8 +8,6 @@
     font-family: arial,sans-serif;
     text-decoration: none;
     font-size: 18px;
-    color: #000;
-    
 }
 html 
 {
@@ -39,6 +37,7 @@ header
 .head_menu
 {
     color: #000;
+    white-space: nowrap;
 }
 .head_menu ul
 {
@@ -47,7 +46,7 @@ header
     padding: 0;
     margin: 0 0 0 10em;
 }
-.head_menu ul li
+.head_menu ul li.menu
 {
     display: inline;
     overflow: hidden;
@@ -61,15 +60,14 @@ header
     padding: 0.4em;
     text-align: center;
     margin: 0 calc(1em) 0 0;
-    
     background: #AEA;
     transition: all 0.1s;
 }
-.head_menu ul li:hover
+.head_menu ul li.menu:hover
 {
     color: #BA2139;
 }
-.head_menu ul li:active
+.head_menu ul li.menu:active
 {
     color: rgb(208, 255, 0);
 }
@@ -168,4 +166,39 @@ footer span.foot_text::after
     position: absolute;
     display: none;
     background: rgba(0,0,0,0.5);
+}
+.dropout_menu {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+.dropout_menu
+{
+    padding: calc(0.5% + 15px);
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: linear-gradient(#DDD,#BBB);
+    box-shadow: 0 0 3px #000, 0 3px 5px #000;
+    border-radius: 10px;
+    width: auto;
+    height: 0;
+    color: rgba(255,255,255,1);
+}
+.list_exercises:hover .dropout_menu
+{
+    display: inline-block;
+    height: auto;
+}
+.dropout_menu a
+{
+    text-shadow: 0 0 2px #000;
+    font-size: 36px;
+    display: block;
+    z-index: 2;
+    color: #FFF;
+}
+.dropout_menu a:hover
+{
+    color: #31A4CF;
 }
