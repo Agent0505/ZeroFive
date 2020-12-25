@@ -37,7 +37,7 @@ header
 .head_menu
 {
     color: #000;
-    white-space: nowrap;
+    
 }
 .head_menu ul
 {
@@ -48,15 +48,14 @@ header
 }
 .head_menu ul li.menu
 {
-    display: inline;
-    overflow: hidden;
+    display: inline-block;
+    height: 1.5em;
     color: #1A3755; 
     cursor: pointer;
     box-shadow: 5px 5px 5px #333;
     border-radius: 1.1em 0;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
-    display: inline;
     padding: 0.4em;
     text-align: center;
     margin: 0 calc(1em) 0 0;
@@ -75,7 +74,7 @@ content
 {
     position: relative;
     display: block;
-    height: 1000px;
+    min-height: 1000px;
     min-width: 1000px;
 }
 content .frame
