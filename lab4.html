@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_rab_4</title>
+    <style>
+        *
+        {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+        html
+        {
+            padding: 20px;
+        }
+        hr
+        {
+            margin: 20px;
+        }
+        .center
+        {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h1
+        {
+            font-size: 36px;
+        }
+        .box_all
+        {
+            position: relative;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+        }
+        .box_all3
+        {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .box1
+        {
+            background-color: #00AABB;
+        }
+        .box12
+        {
+            padding: 10px;
+            border: 10px solid #000;
+            transform: translateX(-150%);
+        }
+        .box14
+        {
+            position: absolute;
+            top: 400px;
+            left: 150%;
+        }
+        .box2
+        {
+            background-color: #DDDDEE;
+        }
+        .box22
+        {
+            border: 20px solid #000;
+        }
+        .box24
+        {
+            position: absolute;
+            top: 200px;
+        }
+        .box3
+        {
+            background-color: #EEAAAA;
+        }
+        .box32
+        {
+            padding: 10px;
+            border: 10px solid #000;
+            transform: translateX(50%);
+        }
+        .box34
+        {
+            position: absolute;
+            left: -50%;
+        }
+        .box_s
+        {
+            position: relative;
+            width: 200px;
+            content: "";
+        }
+        .box_s_3
+        {
+            display: inline-block;
+            height: 200px;
+            width: 100%;
+            position: relative;
+            content: "";
+        }
+        .box_s_4
+        {
+            height: 600px;
+        }
+        .box_s div
+        {
+            width: 200px;
+            height: 200px;
+        }
+        .book_shelf
+        {
+            min-width: 900px;
+        }
+        .book
+        {
+            padding: 10px;
+            font-size: 40px;
+            font-weight: bold;
+            display: inline-block;
+            width: 80px;
+            height: 130px;
+            background: #EEE;
+            border-left: 10px dotted #AAA;
+            margin: 0 5px;
+        }
+        .book.F
+        {
+            display: block;
+            position: relative;
+            left: 900px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+        <hr>
+        <div class="box_s center">
+            <div class="box1 box_all center">#1<h1>Idk what is going on.</h1>No comments...</div>
+            <div class="box2 box_all center">#2</div>
+            <div class="box3 box_all center">#3</div>
+        </div>
+        <hr>
+        <div class="box_s center">
+            <div class="box1 box12 box_all center">#1<h1>Idk what is going on</h1>Take it!</div>
+            <div class="box2 box22 box_all center">#2</div>
+            <div class="box3 box32 box_all center">#3</div>
+        </div>
+        <hr>
+        <div class="box_s_3 center">
+            <div class="box1 box_all box_all3 center">#1<h1>Idk what is going on</h1>Take it!</div>
+            <div class="box2 box_all box_all3 center">#2</div>
+            <div class="box3 box_all box_all3 center">#3</div>
+        </div>
+        <hr>
+        <div class="box_s box_s_4 center">
+            <div class="box1 box14 box_all center">#1<h1>Idk what is going on.</h1>No comments...</div>
+            <div class="box2 box24 box_all center">#2</div>
+            <div class="box3 box34 box_all center">#3</div>
+        </div>
+        <hr>
+        <div class="book_shelf">
+            <div class="book">A</div>
+            <div class="book">B</div>
+            <div class="book">C</div>
+            <div class="book">D</div>
+            <div class="book">E</div>
+            <div class="book F">F</div>
+        </div>
+</body>
+</html>
