@@ -37,24 +37,23 @@ header
 .head_menu
 {
     color: #000;
-    
+    margin: 20px;
 }
 .head_menu ul
 {
-    display: inline;
-    line-height: 7em;
+    display: inline-block;
+    line-height: 2.5em;
     padding: 0;
     margin: 0 0 0 10em;
 }
 .head_menu ul li.menu
 {
     display: inline-block;
-    height: 1.5em;
     color: #1A3755; 
     cursor: pointer;
     box-shadow: 5px 5px 5px #333;
     border-radius: 1.1em 0;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     padding: 0.4em;
     text-align: center;
