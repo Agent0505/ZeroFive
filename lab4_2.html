@@ -10,67 +10,199 @@
 		border: 0;
 		margin: 0;
 		padding: 0;
+        font-family: sans-serif;
+        font-size: 20px;
 	}
+    body
+    {
+        height: 100%;
+    }
     nav
-        {
-        height: 75px;
-        background: royalblue;
-    }
-    header
-    {
-        height: 400px;
-        background: lightskyblue;
-    }
-    section
-    {
-        margin: 75px 100px;
-        height: 675px;
-        background: grey;
-    }
-    .prefooter
-    {
-        height: 40px;
-        background: silver;
-    }
-    footer
-    {
-        height: 100px;
-        background: black;
-    }
-    .yellow_p
-    {
-        height: 200px;
-        background: khaki;
-        margin: 0 0 75px 0;
-    }
-    .orange_box
-    {
-        height: 400px;
-        width: 48%;
-        background: tomato;
-    }
-    .content
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex: 48%;
-        justify-content: space-between;
-    }
+{
+    position: absolute;
+    top: 0px;
+  height: 75px;
+  width: 100%;
+  text-align: right;
+  background: rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5) ;
+  z-index: 5;
+}
+header
+{
+    position: relative;
+    top: -50px;
+    background: url("https://static-cse.canva.com/blob/194906/Swirling-Stars-and-Space-Video-Zoom-Virtual-Background-1.jpg");
+  height: 600px;
+  background-repeat: no-repeat ;
+  background-size: cover;
+}
+section
+{
+  margin: 75px 100px;
+}
+.prefooter
+{
+  height: 40px;
+  background: silver;
+  text-align: center;
+}
+footer
+{
+  height: 100px;
+  background: black;
+}
+.yellow_p
+{
+  padding: 0 0 180px 0;
+  text-align: center;
+}
+.orange_box
+{
+  height: 400px;
+  width: 48%;  
+}
+.orange_box span
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.orange_box span:first-child
+{
+    position: relative;
+    margin-top: 400px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.content
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 48%;
+  justify-content: space-between;
+}
+.text_top
+{
+  display: inline-block;
+  margin: 1%;
+  font-size: 36px;
+  font-weight: 600;
+}
+.text_middle
+{
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 50%;
+  overflow: hidden;
+  line-height: 2.5em;
+}
+.text_foot
+{
+  line-height: 100px;
+}
+nav a 
+{
+    position: relative;
+    top: calc( 50% - 9px);
+    right: 105px;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(184, 0, 0, 0.377);
+    text-shadow: 0 0 5px #000;
+    color: red;
+    box-shadow: 0 0 10px #F00;
+    transition: all 0.3s;
+}
+nav a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+nav a.adv
+{
+    box-shadow: 0 0 15px #000, 0 0 5px #AAA, 0 0 5px #AAA ,0 0 5px #AAA;
+}
+logo
+{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background: url("https://lifeservice.me/wp-content/uploads/2019/05/logo.png");
+    background-size:cover ;
+    width: 100px;
+    height: 40px;
+}
+header span
+{
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    font-size: 64px;
+    text-shadow: 0 0 5px #FFF;
+    margin: 20px 0;
+}
+header button
+{    
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 48px;
+    box-shadow: 0 0 15px #FFF;
+    transition: all 0.3s;
+    margin: 30px 0;
+}
+header button:hover
+{
+    background: rgba(255,100,100,0.3);
+    box-shadow: 0 0 5px #F00;
+    color: purple;
+    text-shadow: 0 0 5px #000;
+}
+h5
+{
+    font-size: 14px;
+}
     </style>
 </head>
 <body>
-    <nav></nav>
-<header></header>
+    <nav><logo></logo><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a><a class="adv" href="#">Link 4</a></nav>
+<header><span><h5>Some info</h5></span><span>HELLO</span><button href="#">Next...</button></header>
 <section>
-  <p class="yellow_p"></p>
+  <p class="yellow_p">
+    <span class="text_top">Hello every one</span><br>
+    <span class="text_middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan interdum sem, in eleifend orci volutpat vel. In rutrum elementum arcu, eu finibus elit tincidunt et. Praesent porta quam vel nulla dictum pretium. </span><br>
+    <span class="text_foot"></span>
+  </p>
   <div class="content">
-  <div class="orange_box"></div>
-  <div class="orange_box"></div>
+  <div class="orange_box" style="background: url('https://static-cse.canva.com/blob/194830/Orange-and-Blue-Liquid-Art-On-Trend-Zoom-Background.png'); background-size: cover;"><span>Some text</span><span>Some textSome textSome textSome textSome textSome textSome text</span></div>
+  <div class="orange_box" style="background: url('https://cgmag.net/wp-content/uploads/2014/08/3.jpg'); background-size: cover;"><span>Some text</span><span>Some textSome textSome textSome textSome textSome textSome text</span></div>
   </div>
 </section>
 <div class="prefooter">
+    Hi
 </div>
-<footer></footer>
+<footer style="color: grey;"><h1><center>Created by student Borisov Nikita 2021</center></h1></footer>
 </body>
 </html>
